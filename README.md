@@ -33,12 +33,10 @@ Unpack the archive:
 
 Invoke the fuzzing:
 
-With only fuzzing the CSV input file based on input files:
+    ./jazzer --cp=build/libs/demo-fuzz-all.jar --instrumentation_includes=org.dstadler.** --target_class=org.dstadler.fuzz.Fuzz -rss_limit_mb=4096 corpus
 
-    ./jazzer --cp=build/libs/demo-fuzz-all.jar --instrumentation_includes=org.apache.commons.** --target_class=org.dstadler.fuzz.Fuzz -rss_limit_mb=4096 corpus
-
-In this mode Jazzer will stop whenever it detects an unexpected exception 
-or crashes.
+In this mode Jazzer will stop whenever it detects an unexpected exception, 
+out of memoery or other crashes.
 
 You can use `--keep_going=10` to report a given number of exceptions before stopping.
 
