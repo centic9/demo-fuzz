@@ -11,5 +11,9 @@ import com.code_intelligence.jazzer.api.FuzzedDataProvider;
  */
 public class Fuzz {
 	public static void fuzzerTestOneInput(FuzzedDataProvider data) {
+		int i = data.consumeInt(0, 10);
+		if (i < 0 || i >= 10) {
+			throw new IllegalStateException("Requested int between 0 and 10, but had: " + i);
+		}
 	}
 }
