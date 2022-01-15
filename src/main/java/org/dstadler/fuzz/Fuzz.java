@@ -15,5 +15,8 @@ public class Fuzz {
 		if (i < 0 || i > 10) {
 			throw new IllegalStateException("Requested int between 0 and 10, but had: " + i);
 		}
+
+		Math.abs(i);
+		Math.min(i, i);
 	}
 }
