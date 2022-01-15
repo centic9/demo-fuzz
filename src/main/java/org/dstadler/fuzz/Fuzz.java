@@ -1,4 +1,4 @@
-package org.dstadler.csv.fuzz;
+package org.dstadler.fuzz;
 
 import com.code_intelligence.jazzer.api.FuzzedDataProvider;
 
