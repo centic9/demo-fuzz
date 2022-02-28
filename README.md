@@ -12,6 +12,12 @@ focuses on the following:
 
 # How to fuzz
 
+There are two Fuzz targets:
+* [Fuzz.java](src/main/java/org/dstadler/fuzz/Fuzz.java) receives a randomized byte-array from Jazzer
+* [FuzzWithProvider.java](src/main/java/org/dstadler/fuzz/Fuzz.java) requests randomized structured input from Jazzer
+
+Both show how Jazzer can quickly find "useful" cases via code-coverage guided fuzzing.
+
 Build the fuzzing target:
 
     ./gradlew shadowJar
