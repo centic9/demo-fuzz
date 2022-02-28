@@ -10,6 +10,8 @@ import com.code_intelligence.jazzer.api.FuzzedDataProvider;
  */
 public class FuzzWithProvider {
 	public static void fuzzerTestOneInput(FuzzedDataProvider data) {
+		// here we ask Jazzer to give us a few integers in the given
+		// range as input
 		int i = data.consumeInt(0, 10000000);
 		int j = data.consumeInt(0, 10000000);
 		int k = data.consumeInt(0, 10000000);
