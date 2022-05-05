@@ -14,7 +14,7 @@ focuses on the following:
 
 There are two Fuzz targets:
 * [Fuzz.java](src/main/java/org/dstadler/fuzz/Fuzz.java) receives a randomized byte-array from Jazzer
-* [FuzzWithProvider.java](src/main/java/org/dstadler/fuzz/Fuzz.java) requests randomized structured input from Jazzer
+* [FuzzWithProvider.java](src/main/java/org/dstadler/fuzz/FuzzWithProvider.java) requests randomized structured input from Jazzer
 
 Both show how Jazzer can quickly find "useful" cases via code-coverage guided fuzzing.
 
