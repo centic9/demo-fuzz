@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.code-intelligence:jazzer-api:0.15.0'
+	implementation 'com.code-intelligence:jazzer-api:0.16.1'
 }
 
 wrapper {
