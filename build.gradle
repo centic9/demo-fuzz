@@ -10,8 +10,22 @@ repositories {
 
 dependencies {
 	implementation 'com.code-intelligence:jazzer-api:0.21.1'
+	implementation 'commons-io:commons-io:2.14.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+	testImplementation 'org.mockito:mockito-core:5.5.0'
+}
+
+test {
+	useJUnitPlatform()
 }
 
 wrapper {
 	gradleVersion = '7.6.1'
+}
+
+tasks.register('getDeps', Copy) {
+	from sourceSets.main.runtimeClasspath
+	into 'build/runtime/'
 }
