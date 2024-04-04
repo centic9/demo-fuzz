@@ -7,6 +7,10 @@ import com.code_intelligence.jazzer.api.FuzzedDataProvider;
  * shows that Jazzer does not use simple brute-force, but
  * rather uses coverage data to find inputs that are needed
  * to visit branches
+ *
+ * Using the {@link com.code_intelligence.jazzer.api.FuzzedDataProvider}
+ * allows to fetch various different types of input data which
+ * still allows Jazzer to find interesting code-paths quickly.
  */
 public class FuzzWithProvider {
 	public static void fuzzerTestOneInput(FuzzedDataProvider data) {
