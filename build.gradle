@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.code-intelligence:jazzer-api:0.22.1'
+	implementation 'com.code-intelligence:jazzer-api:0.23.0'
 	implementation 'commons-io:commons-io:2.18.0'
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
 	testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.4'
